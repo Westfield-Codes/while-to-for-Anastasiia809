@@ -2,21 +2,19 @@
 
 // Create 2 variables, a & b, and set to ne random integers between 3 and 9
 // Set a variable called equation to display  a * b = ??
-var question = 0;
 var equation = 0;
-while (question < 5) {
-    var a = Math.floor(Math.random()*10-3)+3;
-    var b = Math.floor(Math.random()*10-3)+3;
+for (let question = 0; question < 5; question++) {
+    var a = Math.floor(Math.random()*(10-3))+3;
+    var b = Math.floor(Math.random()*(10-3))+3;
 // Set a variable called product to be the product of a and b
     var product = a * b;
-equation = alert(a + " * " + b + "= ??");
+equation = alert(a + " * " + b + " = ??");
 // Ask the equation of the user and store the user input in a variable called answer
 answer = prompt(equation);
-question++;
-}
-// Say "Correct!" if the answer and product match, "Incorrect!" if not.
 if (answer == product) alert("Correct!");
 else alert("Incorrect!");
+}
+// Say "Correct!" if the answer and product match, "Incorrect!" if not.
 /* Multiplication whjile Loop */
 // Embed all this code in a While loop and run it 5 times.
 
